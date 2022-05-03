@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: Yanone Kaffeesatz, sans-serif;
+    color: #F0F5DE;
+    background: black url('../images/compass-5823325_1920.jpg') no-repeat fixed center;
+    background-size: auto;
+}
+
+h1 {
+    font-size: 70px;
+    letter-spacing: 5px;
+}
+
+#quiz-heading {
+    margin-top: 200px;
+    text-align: center;
+}
+
+#main-buttons {
+    text-align: center;
+}
+
+.game-buttons {
+    width: 300px;
+    height: 100px;
+    padding: 20px;
+    margin: 10px;
+}
