@@ -117,7 +117,7 @@ h1 {
 }
 
 #name-input {
-    width: 300px;
+    width: 295px;
     height: 70px;
     background-color: #031825a6;
     border: 1px solid #cfd6db;;
@@ -125,6 +125,7 @@ h1 {
     color: #cfd6db;
     font-family: inherit;
     letter-spacing: 4px;
+    margin-bottom: 10px;
 }
 
 /* Score page */
