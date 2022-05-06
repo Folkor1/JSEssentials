@@ -8,15 +8,31 @@
     <title>Name</title>
 </head>
 <body>
+
+    <!-- name input -->
     <div id="name-div">Please enter your name:</div>
     <div class="buttons-div">
     <input type="text" id="name-input" maxlength="25" placeholder="Name">
 </div>
-    
     <div class="buttons-div">
     <button id="start-button" class="main-nav">Start!</button>
 </div>
 
+
+<!-- quiz game -->
+<div id="quiz-div" style="display:none">
+<div id="score-div">Score: <span>0</span></div>
+    <div id="progress-div">Progress: <span>0</span></div>
+    <br>
+    <div id="question-div">Question</div>
+    <div id="quiz-buttons">
+    <button class="main-nav"><span id="quiz-button1">Answer1</span></button>
+    <button class="main-nav"><span id="quiz-button2">Answer2</span></button>
+    <br>
+    <button class="main-nav"><span id="quiz-button3">Answer3</span></button>
+    <button class="main-nav"><span id="quiz-button4">Answer4</span></button>
+</div>
+</div>
     <script src="assets/js/script.js"></script>
     <script src="https://kit.fontawesome.com/086f06e449.js" crossorigin="anonymous"></script>
 </body>

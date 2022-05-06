@@ -36,7 +36,6 @@ h1 {
     font-family: Yanone Kaffeesatz, sans-serif;
     font-size: 65px;
     color: azure;
-
 }
 
 #rules-button {
@@ -153,18 +152,37 @@ h1 {
     background-color: #031825a6;
 }
 
-#name-span {
+#name-heading {
     margin: 10px 0 0 10px;
     font-family: Yanone Kaffeesatz, sans-serif;
     font-size: 60px;
     color: #cfd6db;
     float: left;
+    border-bottom: 1px solid #cfd6db;
 }
 
-#score-span {
+#score-heading {
     margin: 10px 10px 0 0;
     font-family: Yanone Kaffeesatz, sans-serif;
     font-size: 60px;
     color: #cfd6db;
     float: right;
+    border-bottom: 1px solid #cfd6db;
+}
+
+#name-span {
+    clear: both;
+    float: left;
+    margin: 30px 0 0 10px;
+    font-family: inherit;
+    font-size: 50px;
+    color: #cfd6db;
+}
+
+#score-span {
+    float: right;
+    margin: 30px 10px 0 0;
+    font-family: inherit;
+    font-size: 50px;
+    color: #cfd6db;
 }
