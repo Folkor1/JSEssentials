@@ -95,7 +95,8 @@ h1 {
     width: 100%;
     margin: 180px 0 100px 0;
     text-align: center;
-    font-size: 110px;
+    font-weight: 600;
+    font-size: 95px;
 }
 
 #quiz-buttons {
@@ -125,6 +126,11 @@ h1 {
     font-family: inherit;
     letter-spacing: 4px;
     margin-bottom: 10px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s; 
 }
 
 /* Score page */
@@ -185,4 +191,168 @@ h1 {
     font-family: inherit;
     font-size: 50px;
     color: #cfd6db;
+}
+
+/* For larger to medium screens size from 1200px wide and down */
+@media screen and (max-width: 1200px) {
+    #quiz-heading {
+        font-size: 50px;
+    }
+
+    #rules-tab {
+        width: 700px;
+        height: 450px;
+        font-size: 50px;
+    }
+
+    #score-div {
+        font-size: 80px;
+        margin-left: 20px;
+    }
+
+    #progress-div {
+        font-size: 80px;
+        margin-right: 20px;
+    }
+
+    #question-div {
+        font-size: 100px;
+    }
+}
+
+/* For medium to small screens size from 900px wide and down */
+@media screen and (max-width: 900px) {
+    #quiz-heading {
+        font-size: 40px;
+    }
+
+    #rules-tab {
+        width: 500px;
+        height: 500px;
+        font-size: 45px;
+    }
+
+    h1 {
+        font-size: 60px
+    }
+
+    #question-div {
+        margin: 50px 0 50px 0;
+        font-size: 75px;
+    }
+
+    #score-div {
+        text-align: center;
+        float: none;
+        font-size: 60px;
+    }
+
+    #progress-div {
+        float: none;
+        text-align: center;
+        font-size: 60px;
+    }
+}
+
+/* For small screens size from 600px to 440px */
+@media screen and (max-width: 600px) {
+    #quiz-heading {
+        padding: 0 100px 0 100px;
+        }
+
+    #rules-tab {
+        width: 350px;
+        height: 550px;
+        font-size: 40px;
+    }
+
+    #name-div {
+        font-size: 50px;
+        width: 390px;
+    }
+
+    #question-div {
+        margin: 50px 0 50px 0;
+        font-size: 60px;
+    }
+
+    #score-div {
+        text-align: center;
+        float: none;
+        font-size: 45px;
+    }
+
+    #progress-div {
+        float: none;
+        text-align: center;
+        font-size: 45px;
+    }
+
+    #results-heading {
+        font-size: 60px;
+        width: 300px;
+    }
+
+    #leaderboard-div {
+        width: 400px;
+    }
+}
+
+/* For small screens size from 440px to 320px */
+@media screen and (max-width: 440px) {
+    #quiz-heading {
+        padding: 0 20px 0 20px;
+        }
+    
+    .main-nav {
+        width: 250px;
+        height: 80px;
+        font-size: 40px;
+    }
+
+    .main-nav:hover {
+        width: 270px;
+        height: 85px;
+    }
+
+    #rules-button {
+        font-size: 35px;
+    }
+
+    #rules-tab {
+        width: 250px;
+        height: 550px;
+        font-size: 40px;
+    }
+
+    #name-div {
+        font-size: 40px;
+        width: 310px;
+        height: 45px;
+    }
+
+    #question-div {
+        margin: 10px 0 10px 0;
+        padding: 50px 0 50px 0;
+        font-size: 40px;
+    }
+
+    #results-heading {
+        font-size: 50px;
+        height: 140px;
+    }
+
+    #leaderboard-div {
+        width: 280px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    #name-span {
+        width: 170px;
+        height: 300px;
+        overflow-wrap: break-word;
+    }
 }

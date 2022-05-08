@@ -12,7 +12,7 @@
     <!-- name input -->
     <div id="name-div">Please enter your name:</div>
     <div class="buttons-div">
-    <input type="text" id="name-input" maxlength="25" placeholder="Name">
+    <input type="text" id="name-input" maxlength="10" placeholder="Name">
 </div>
     <div class="buttons-div">
     <button id="start-button" class="main-nav">Start!</button>
@@ -22,17 +22,39 @@
 <!-- quiz game -->
 <div id="quiz-div" style="display:none">
 <div id="score-div">Score: <span>0</span></div>
-    <div id="progress-div">Progress: <span>0</span></div>
+    <div id="progress-div">Progress: <span id="progress-span">1</span> / 15</div>
     <br>
     <div id="question-div">Question</div>
     <div id="quiz-buttons">
-    <button class="main-nav quiz-but" id="quiz1"><span id="quiz-button1"></span></button>
-    <button class="main-nav quiz-but"><span id="quiz-button2"></span></button>
+    <button class="main-nav quiz-but" id="button1"><span></span></button>
+    <button class="main-nav quiz-but" id="button2"><span></span></button>
     <br>
-    <button class="main-nav quiz-but"><span id="quiz-button3"></span></button>
-    <button class="main-nav quiz-but"><span id="quiz-button4"></span></button>
+    <button class="main-nav quiz-but" id="button3"><span></span></button>
+    <button class="main-nav quiz-but" id="button4"><span></span></button>
 </div>
 </div>
+
+<!-- results screen -->
+<div id="results-heading" style="display:none">Well Done!<br>Your Score: <span id=game-score></span></div>
+<div class="buttons-div" id="results-buttons" style="display:none">
+    <button class="main-nav" id="leaderboard-button">Leaderboard</button>
+    <br>
+    <button onclick = "window.location.href='index.html'" class="main-nav">Home</button>
+</div>
+
+<!-- leaderboard screen -->
+<div id="leaderboard-wrap" style="display:none">
+    <div id="leaderboard-div">
+        <h2 id="name-heading">Name</h2>
+        <h2 id="score-heading">Score</h2>
+        <span id="name-span">placeholder</span>
+        <span id="score-span">0</span>
+    </div>
+    <div class="buttons-div">
+    <button onclick = "window.location.href='index.html'" class="main-nav">Home</button>
+</div>
+</div>
+
     <script src="assets/js/script.js"></script>
     <script src="https://kit.fontawesome.com/086f06e449.js" crossorigin="anonymous"></script>
 </body>
